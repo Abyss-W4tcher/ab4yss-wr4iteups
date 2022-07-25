@@ -30,7 +30,7 @@ Steps :
 
 Useful one-liner (step 1 to 4):  
 
-`mkdir docker_spip && cd docker_spip && wget https://https://github.com/Abyss-W4tcher/ab4yss-writeups/raw/master/SPIP%204.1.2%20Vulnerabilities/How%20to%20easily%20setup%20SPIP%20with%20docker-compose/spip-compose.yml && mkdir html`
+`mkdir docker_spip && cd docker_spip && wget https://https://github.com/Abyss-W4tcher/ab4yss-wr4iteups/raw/master/SPIP%204.1.2%20Vulnerabilities/How%20to%20easily%20setup%20SPIP%20with%20docker-compose/spip-compose.yml && mkdir html`
 
 ## Infos
 
