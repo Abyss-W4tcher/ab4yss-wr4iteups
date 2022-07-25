@@ -102,7 +102,7 @@ Let's inject random quotes and angle brackets `_oups=czoxOiJhIjtpOjE6MDs='">` :
 
 <img src="../images/b20123d86d2c1428de66b36d119f808526ff80bc1865475610a1191daaf9d1ae.png" width=250> 
 
-This does not looks good, noting that at this point, I didn't even checked what was the rest of the code. The only observation I could make was that the unserialize function only checked if "_oups" started with a valid base_64 object.  
+This does not look good, noting that at this point, I didn't even checked what was the rest of the code. The only observation I could make was that the unserialize function only checked if "_oups" started with a valid base_64 object.  
 
 Does it mean that everything after the b64 is processed without restiction ?
 
