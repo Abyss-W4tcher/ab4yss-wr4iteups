@@ -186,7 +186,7 @@ So, it first checks for a valid base64_decode, which is true. Then for a valid b
 
 ![picture 40](../images/test_b64decode_unserialize.png) 
 
-It considers the user input as valid, and sent to further processing (dynamic eval of SPIP) which renders our code.
+It considers the user input as valid, and sends it to further processing (dynamic eval engine of SPIP) which renders our code.
 
 We now have the ability to execute arbitrary code on the server, with any author account. A first approach could be to dump the `phpinfo()` to check the disabled functions, then build payloads to exfiltrate files, secrets (e.g. : SQL creds in `config/connect.php`), try to privesc etc.
 
