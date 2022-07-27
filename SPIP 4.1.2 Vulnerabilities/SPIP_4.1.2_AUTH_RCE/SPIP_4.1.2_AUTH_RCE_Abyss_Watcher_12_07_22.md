@@ -182,7 +182,7 @@ What is happening :
 if (_request('annuler_oups') and $oups = _request('_oups') and $oups = base64_decode($oups) and $oups = unserialize($oups))
 ```
 
-So, it first checks for a valid base64_decode, which is true. Then for a valid base64 object, which is also true (the object instantiates a string "a" of length 1) :
+So, it first checks for a valid base64_decode, which is true. Then for a valid object, which is also true (the object instantiates a string "a" of length 1) :
 
 ![picture 40](../images/test_b64decode_unserialize.png) 
 
