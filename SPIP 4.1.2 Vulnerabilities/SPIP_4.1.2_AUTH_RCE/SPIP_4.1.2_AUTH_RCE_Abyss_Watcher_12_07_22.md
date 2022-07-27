@@ -176,6 +176,18 @@ Answer (`_oups=czoxOiJhIjtpOjE6MDs=%27"><?php%20echo(%27RCE%27)?>`) :
 
 The php tags are gone, and we can see the letters "R","C","E" kindly appearing on our screen :).
 
+What is happening :
+
+```
+if (_request('annuler_oups') and $oups = _request('_oups') and $oups = base64_decode($oups) and $oups = unserialize($oups))
+```
+
+So, it first checks for a valid base64_decode, which is true. Then for a valid base64 object, which is also true (the object instantiates a string "a" of length 1) :
+
+![picture 40](../images/test_b64decode_unserialize.png) 
+
+It considers the user input as valid, and sent to further processing (dynamic eval of SPIP) which renders our code.
+
 We now have the ability to execute arbitrary code on the server, with any author account. A first approach could be to dump the `phpinfo()` to check the disabled functions, then build payloads to exfiltrate files, secrets (e.g. : SQL creds in `config/connect.php`), try to privesc etc.
 
 After this discovery, we decided to create POC's for exploit automation. It is joined in this folder, under the name "SPIP_4.1.2_AUTH_RCE_POC.py". We did not pushed it really far, just an interactive webshell on terminal, with basic error handling.
