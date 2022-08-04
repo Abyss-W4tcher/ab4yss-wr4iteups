@@ -134,7 +134,7 @@ Il est donc évidemment possible d'instancier un "reverse shell", ou de supprime
 
 # Remarques
 
-- Afficher une version non-interprétée d'un document HTML lors de son accès via lien direct (ex: `/IMG/html/document.html`). Cela permet de s'assurer du contenu de ce dernier (pas de balises `<script>` ou code malveillant), avant de le rendre (via un bouton "Voulez-vous afficher le rendu de ce document HTML ?"). Cela empêcherait les attaques directes de type XSS, ainsi que le chargement de scripts en local comme pour le POC "XSS -> CSRF -> RCE" détaillé précédemment. En général, l'accès à une ressource locale de manière brute ne pose pas de problèmes (fichiers images, PDF, etc.), mais pas dans ce cas de figure. L'usage d'une sandbox pour rendre ces documents est également envisageable.
+- Afficher une version non-interprétée d'un document HTML lors de son accès via lien direct (ex: `/IMG/html/document.html`). Cela permettrait de s'assurer du contenu de ce dernier (pas de balises `<script>` ou code malveillant), avant de le rendre (via un bouton "Voulez-vous afficher le rendu de ce document HTML ?"). Cela empêcherait les attaques directes de type XSS, ainsi que le chargement de scripts en local comme pour le POC "XSS -> CSRF -> RCE" détaillé précédemment. En général, l'accès à une ressource locale de manière brute ne pose pas de problèmes (fichiers images, PDF, etc.), mais pas dans ce cas de figure. L'usage d'une sandbox pour rendre ces documents est également envisageable.
   
 - Demander une confirmation par mot de passe, au moment de mettre en ligne un plugin, créer un webmaster... Cela bloquerait (en partie) les vecteurs de RCE et d'élévation de privilèges.
 
