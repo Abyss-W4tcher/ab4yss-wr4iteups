@@ -20,9 +20,11 @@ Steps :
    |-   html/
    |-   spip-compose.yml
    ```
-6. Edit the `spip-compose.yml`, to match the PHP/MySQL versions (https://www.spip.net/fr_article4351.html), according to the version of SPIP you want.
+6. Edit the `spip-compose.yml`, to match the PHP/MySQL versions (https://www.spip.net/en_article4351.html), according to the version of SPIP you want.
 7. Execute `docker-compose -f spip-compose.yml up` and the dockers will setup.
-8. Access SPIP loader on http://127.0.0.1:3309/spip_loader.php and install the version wanted (https://www.spip.net/en_article5705.html).
+8. Access SPIP loader on http://127.0.0.1:3309/spip_loader.php and install the version wanted (https://www.spip.net/en_article6650.html).   
+**TIP** : The version you are looking for may not be listed in the dropdown menu. However, you can send this GET request to initiate the procedure with a custom version :
+`/spip_loader.php?chemin=spip%2Farchives%2Fspip-v[version number (e.g. 4.1.5)].zip&dest=&range=0&etape=charger`
 9.  Once everything is downloaded, go to http://127.0.0.1:3309/ecrire to continue (if not already redirected).
 10. For MySQL, do not specify `localhost` or `127.0.0.1` as IP, but the one assigned to your interface (port : 3307). Credentials : `root:root`.
 11. Follow the instructions and SPIP will be setup !
