@@ -24,7 +24,7 @@ Hey, you'll find here documents related to a bug bounty done by me and SpawnZii 
 
 ## Security fixes
 
-All the issues listed in this repository have been fixed in this release :
+All the issues listed in this repository have been fixed with this release :
 https://blog.spip.net/Mise-a-jour-critique-de-securite-sortie-de-SPIP-4-1-5-SPIP-4-0-8-et-SPIP-3-2-16.html
 
 
