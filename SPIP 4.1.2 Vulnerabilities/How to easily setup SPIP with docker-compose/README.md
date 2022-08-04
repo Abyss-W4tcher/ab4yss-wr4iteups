@@ -43,7 +43,7 @@ You can change the binding ports as you want in the docker-compose, or even add 
 ---
 
 /!\ The spip_loader is now compressed into a phar archive. The problem was that I couldn't managed to setup with it, as the browser was trying to download the PHP file `spip_loader.php/index.php` and not display them. I had to make a trick to extract the phar archive and obtain the plain PHP files.
-Unfortunately, all the spip_loader files are in the root directory, because it doesn't give us the opportunity to choose the spip install location. It shouldn't disturb you while browsing the SPIP directory, because the PHP files are listed after directories.
+Unfortunately, all the spip_loader files are in the root directory, because it doesn't give us the opportunity to choose the spip install location.
 
 
 ## Ressources
