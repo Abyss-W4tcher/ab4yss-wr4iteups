@@ -26,7 +26,7 @@ Steps :
 **TIP** : The version you are looking for may not be listed in the dropdown menu. However, you can send this GET request to initiate the procedure with a custom version :
 `/spip_loader.php?chemin=spip%2Farchives%2Fspip-v[version number (e.g. 4.1.5)].zip&dest=&range=0&etape=charger`
 9.  Once everything is downloaded, go to http://127.0.0.1:3309/ecrire to continue (if not already redirected).
-10. For MySQL, do not specify `localhost` or `127.0.0.1` as IP, but the one assigned to your interface (port : 3307). Credentials : `root:root`.
+10. For MySQL, do not specify `localhost:3307` or `127.0.0.1:3307` as IP, but the one assigned to your interface (e.g. 192.168.1.1:3307). Credentials : `root:root`.
 11. Follow the instructions and SPIP will be setup !
 12. Bonus step : change the permissions of the `html` folder, because it is owned by root. It may be annoying when editing or removing files.
 
