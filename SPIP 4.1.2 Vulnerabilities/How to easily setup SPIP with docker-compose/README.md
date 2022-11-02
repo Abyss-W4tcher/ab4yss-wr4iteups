@@ -6,7 +6,7 @@ Do not use this in a production environment. It is for testing purposes only.
 
 ## Setup
 
-For my researches, I had to have the possibility to deploy quickly a SPIP environment on our machines. For that, I took the `docker-compose` from https://thinkloveshare.com/hacking/rce_on_spip_and_root_me/ as a base.
+For my researches, I needed the possibility to deploy quickly a SPIP environment on our machines. For that, I took the `docker-compose` from https://thinkloveshare.com/hacking/rce_on_spip_and_root_me/ as a base.
 
 Steps :
 
